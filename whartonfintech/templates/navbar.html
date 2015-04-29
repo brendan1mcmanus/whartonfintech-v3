@@ -18,7 +18,14 @@
       <div class="collapse navbar-collapse" id="navbar-collapse-contents">
         {% if request.user.is_authenticated %}<a href="{% url 'account_logout' %}" class="btn btn-danger navbar-btn pull-right" style="margin-left: 2em;">Logout</a>{% endif %}
         <ul class="nav navbar-nav navbar-right">
+          {% if is_homepage %}
+          <li><a href="#home">{% bootstrap_icon "home" %}</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#ideas">Ideas</a></li>
+          {% else %}
           <li{% if menu_context.0 == 'home' %} class="active"{% endif %}><a href="{% url 'home' %}">{% bootstrap_icon "home" %}</a></li>
+          {% endif %}
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>

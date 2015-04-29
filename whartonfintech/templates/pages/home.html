@@ -1,1 +1,103 @@
 {% extends "base.html" %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+{% block additional-styles %}
+  <link rel="stylesheet" href="{% static "css/custom-home.css" %}">
+{% endblock %}
+
+{% block title %}Wharton FinTech{% endblock %}
+
+{% block container %}
+
+  <a id="home" class="anchor"></a>
+  <div class="parallax-window parallax-window-splash" data-parallax="scroll" data-image-src="{% static 'images/home/huntsman-hall.jpg' %}" data-position="bottom left" data-speed="0.5">
+    <div class="caption">
+      <div class="container" id="content">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>We are FinTech thought leaders connecting <strong>innovators,&nbsp;academics&nbsp;and&nbsp;investors</strong> with the <strong>ideas&nbsp;and&nbsp;companies</strong> that are <strong>reinventing&nbsp;global&nbsp;financial&nbsp;services</strong>.</p>
+            <p>{% bootstrap_icon 'chevron-down' %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-interstitial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1>Optional Introduction to Wharton FinTech</h1>
+          </div>
+          {% bootstrap_messages %}
+          <p class="lead"><span style="background-color: #ffff00;">We can include anything here, including our Twitter feed, Facebook feed, upcoming events, recent blog posts, a contact form -- whatever we want.</span></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum sem eget erat euismod, eget porta dui suscipit. Mauris in mi et nunc lacinia pharetra. Vestibulum ex arcu, ultricies eu bibendum eget, sagittis et lacus. Etiam malesuada imperdiet nibh non vehicula. Curabitur dictum nisl eu lorem condimentum, egestas commodo massa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="careers" class="anchor"></a>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/home/career.jpg' %}">
+    <div class="headline">Careers</div>
+  </div>
+
+  <div class="parallax-interstitial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1>Optional Tagline about Careers</h1>
+          </div>
+          <p class="lead"><span style="background-color: #ffff00;">We can include anything here, including our Twitter feed, Facebook feed, upcoming events, recent blog posts, a contact form -- whatever we want.</span></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum sem eget erat euismod, eget porta dui suscipit. Mauris in mi et nunc lacinia pharetra. Vestibulum ex arcu, ultricies eu bibendum eget, sagittis et lacus. Etiam malesuada imperdiet nibh non vehicula. Curabitur dictum nisl eu lorem condimentum, egestas commodo massa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="education" class="anchor"></a>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/home/education.jpg' %}" data-speed="0.4">
+    <div class="headline">Education</div>
+  </div>
+
+  <div class="parallax-interstitial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1>Optional Tagline about Education</h1>
+          </div>
+          <p class="lead"><span style="background-color: #ffff00;">We can include anything here, including our Twitter feed, Facebook feed, upcoming events, recent blog posts, a contact form -- whatever we want.</span></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum sem eget erat euismod, eget porta dui suscipit. Mauris in mi et nunc lacinia pharetra. Vestibulum ex arcu, ultricies eu bibendum eget, sagittis et lacus. Etiam malesuada imperdiet nibh non vehicula. Curabitur dictum nisl eu lorem condimentum, egestas commodo massa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="ideas" class="anchor"></a>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/home/ideas.jpg' %}" data-speed="0.6">
+    <div class="headline">Ideas</div>
+  </div>
+
+  <div class="parallax-interstitial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1>Optional Tagline about the Blog</h1>
+          </div>
+          <p class="lead"><span style="background-color: #ffff00;">We can include anything here, including our Twitter feed, Facebook feed, upcoming events, recent blog posts, a contact form -- whatever we want.</span></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum sem eget erat euismod, eget porta dui suscipit. Mauris in mi et nunc lacinia pharetra. Vestibulum ex arcu, ultricies eu bibendum eget, sagittis et lacus. Etiam malesuada imperdiet nibh non vehicula. Curabitur dictum nisl eu lorem condimentum, egestas commodo massa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block additional-scripts %}
+  <script src="{% static "js/parallax.min.js" %}"></script>
+{% endblock %}

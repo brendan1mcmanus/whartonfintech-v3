@@ -30,7 +30,7 @@
 
   </head>
 
-  <body>
+  <body{% if is_homepage %} data-spy="scroll" data-target="#navbar-collapse-contents"{% endif %}>
     {% block page %}
     <!-- Wrap all page content here -->
     <div id="wrap">

@@ -21,12 +21,17 @@ html, body {
 
 /* Custom Styles */
 body {
+  position: relative; // Necessary for scrollspy.
   padding-top: $navbar-height + 0;
 }
 
 .navbar-brand {
   padding-top: 33px;
   padding-bottom: 33px;
+}
+
+.lead {
+  line-height: $line-height-base;
 }
 
 #footer {
