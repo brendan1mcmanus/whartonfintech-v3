@@ -100,4 +100,6 @@
 
 {% block additional-scripts %}
   <script src="{% static "js/parallax.min.js" %}"></script>
+  <script src="{% static "js/viewport-units-buggyfill.js" %}"></script>
+  <script>window.viewportUnitsBuggyfill.init();</script>
 {% endblock %}
