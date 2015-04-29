@@ -11,17 +11,18 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',  # noqa
-    url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
-    url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
-
     # Django Admin (Comment the next line to disable the admin)
     url(r'^admin/', include(admin.site.urls)),
 
     # User management
     url(r'^users/', include("whartonfintech.users.urls", namespace="users")),
     url(r'^accounts/', include('allauth.urls')),
+)
 
-    # Your stuff: custom urls includes go here
+# Custom URLs
+urlpatterns += patterns('',
+    url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
+    url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
+)
 
-
-) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
