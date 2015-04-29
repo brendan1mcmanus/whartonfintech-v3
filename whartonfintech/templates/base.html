@@ -1,4 +1,4 @@
-{% load staticfiles %}<!DOCTYPE html>
+{% load staticfiles bootstrap3 %}<!DOCTYPE html>
 <html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
@@ -37,12 +37,12 @@
     {% block navbar %}{% include "navbar.html" %}{% endblock %}
 
     <div class="container">
-        
-      {% if messages %}
-          {% for message in messages %}
-              <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message }}</div>
-          {% endfor %}
-      {% endif %}
+
+      {% block messages %}<div class="row">
+        <div class="col-xs-12">
+          {% bootstrap_messages %}
+        </div>
+      </div>{% endblock %}
 
       {% block content %}
         <p>Use this document as a way to quick start any new project.</p>
