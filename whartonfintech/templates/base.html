@@ -13,16 +13,11 @@
     <![endif]-->
 
     {% block css %}
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="{% static "css/theme.css" %}">
-
-    <!-- Your stuff: Third-party css libraries go here -->
-
-    <!-- This file store project specific CSS -->
-    <link href="{% static 'css/project.css' %}" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="{% static "css/bootstrap-style.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
+    <link rel="stylesheet" href="{% static 'css/custom-style.css' %}">
+    {% block additional-styles %}{% endblock %}
     {% endblock %}
 
     {% block angular %}
