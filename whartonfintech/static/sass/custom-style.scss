@@ -18,3 +18,8 @@ html, body {
 #footer {
   height: $footer-height;
 }
+
+/* Custom Styles */
+body {
+  padding-top: $navbar-height + 0;
+}
