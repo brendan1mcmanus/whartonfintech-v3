@@ -31,11 +31,27 @@
   </head>
 
   <body>
+    {% block page %}
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+    <!-- a11y -->
+    <a href="#content" class="sr-only">Skip to main content</a>
 
     <!-- navigation -->
     {% block navbar %}{% include "navbar.html" %}{% endblock %}
 
-    <div class="container">
+    <!-- content -->
+    {% block container %}
+    <div class="container" id="content">
+
+      {% block page-header-block %}<div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h1>{% block page-header %}Wharton FinTech{% endblock %}</h1>
+          </div>
+        </div>
+      </div>{% endblock %}
 
       {% block messages %}<div class="row">
         <div class="col-xs-12">
@@ -43,12 +59,24 @@
         </div>
       </div>{% endblock %}
 
-      {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
-      {% endblock content %}
+      {% block content %}<div class="row">
+        <div class="col-xs-12">
+          <p>Use this document as a way to quick start any new project.</p>
+        </div>
+      </div>{% endblock content %}
 
     </div> <!-- /container -->
-    
+    {% endblock container %}
+
+    </div> <!-- /wrap -->
+    {% endblock page %}
+
+    {% block footer %}
+    <div id="footer">
+      {% include "footer.html" %}
+    </div>
+    {% endblock %}
+
     {% block modal %}{% endblock modal %}
 
     <!-- Le javascript
