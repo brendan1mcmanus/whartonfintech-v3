@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block title %}{{ blog.title }}{% endblock %}
+
+{% block meta-description %}
+    <meta name="description" content="{{ blog.description }}">
+{% endblock %}
+
+{% block blog-title %}{{ blog.title }}{% endblock %}
+
+{% block banner-image %}{% if blog.banner_image %}{{ blog.banner_image.url }}{% else %}{% static "images/article-banners/banner-v1.jpg" %}{% endif %}{% endblock %}
+
+{% block blog-date %}{{ blog.dateline|date:"F j, Y" }}{% endblock %}
+
+{% block blog-author %}{{ blog.byline }}{% endblock %}
+
+{% block blog-body %}{{ blog.text|safe }}{% endblock %}
+
+{% block blog-author-section %}
+  {% if authors %}
+    <hr>
+    {% for author in authors %}
+    <div class="clearfix"></div>
+    <img src="{{ author.avatar.url }}" class="img-rounded img-responsive pull-left" style="margin-right: 1em; margin-bottom: 1em;" />
+    <p><em>{{ author.bio|safe }}</em></p>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

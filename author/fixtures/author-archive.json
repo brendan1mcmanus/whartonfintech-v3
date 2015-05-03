@@ -1,0 +1,158 @@
+[
+{
+  "fields": {
+    "bio": "Daniel McAuley is a first-year MBA student at The Wharton School and a Co-Founder of Wharton FinTech.",
+    "first_name": "Daniel",
+    "last_name": "McAuley",
+    "created": "2015-04-07T22:30:36.009Z",
+    "edited": "2015-04-07T22:30:36.009Z",
+    "avatar": "authors/daniel-mcauley.jpg",
+    "slug": "daniel-mcauley"
+  },
+  "model": "author.author",
+  "pk": 1
+},
+{
+  "fields": {
+    "bio": "Steve Weiner is a first-year MBA student at The Wharton School and a Co-Founder of Wharton FinTech.",
+    "first_name": "Steve",
+    "last_name": "Weiner",
+    "created": "2015-04-07T23:53:53.323Z",
+    "edited": "2015-04-07T23:53:53.323Z",
+    "avatar": "authors/steve-weiner.jpg",
+    "slug": "steve-weiner"
+  },
+  "model": "author.author",
+  "pk": 2
+},
+{
+  "fields": {
+    "bio": "Matt Carey is a second-year MBA student at The Wharton School, Co-Founder of <a href=\"https://www.myabaris.com/\" target=\"_blank\">Abaris</a>, and a Co-Founder of Wharton FinTech.",
+    "first_name": "Matt",
+    "last_name": "Carey",
+    "created": "2015-04-07T23:57:07.757Z",
+    "edited": "2015-04-07T23:57:07.757Z",
+    "avatar": "authors/matt-carey.jpg",
+    "slug": "matt-carey"
+  },
+  "model": "author.author",
+  "pk": 3
+},
+{
+  "fields": {
+    "bio": "Sudipta Bandyopadhyay is a first-year MBA student at The Wharton School and a Co-Founder of Wharton FinTech.",
+    "first_name": "Sudipta",
+    "last_name": "Bandyopadhyay",
+    "created": "2015-04-07T23:59:02.726Z",
+    "edited": "2015-04-07T23:59:02.726Z",
+    "avatar": "authors/sudipta-bandyopadhyay.jpg",
+    "slug": "sudipta-bandyopadhyay"
+  },
+  "model": "author.author",
+  "pk": 4
+},
+{
+  "fields": {
+    "bio": "Danielle Bicknell was one of the first employees of LendUp, is Head of Financial Education and is currently pursuing her Masters Degree in International Development and Education, with a focus on financial literacy, at the University of Pennsylvania.",
+    "first_name": "Danielle",
+    "last_name": "Bicknell",
+    "created": "2015-04-28T03:57:02.912Z",
+    "edited": "2015-04-28T03:57:02.912Z",
+    "avatar": "authors/danielle-bicknell.jpg",
+    "slug": "danielle-bicknell"
+  },
+  "model": "author.author",
+  "pk": 5
+},
+{
+  "fields": {
+    "bio": "Sasha Dobrolioubov is a first-year MBA student at The Wharton School and the VP Education of Wharton FinTech.",
+    "first_name": "Sasha",
+    "last_name": "Dobrolioubov",
+    "created": "2015-04-28T04:00:09.892Z",
+    "edited": "2015-04-28T04:00:09.892Z",
+    "avatar": "authors/sasha-dobrolioubov.jpg",
+    "slug": "sasha-dobrolioubov"
+  },
+  "model": "author.author",
+  "pk": 6
+},
+{
+  "fields": {
+    "bio": "Cameron Peake is a first-year MBA student at The Wharton School and the VP Communications of Wharton FinTech.",
+    "first_name": "Cameron",
+    "last_name": "Peake",
+    "created": "2015-04-28T04:05:47.623Z",
+    "edited": "2015-04-28T04:05:47.623Z",
+    "avatar": "authors/cameron-peake.jpg",
+    "slug": "cameron-peake"
+  },
+  "model": "author.author",
+  "pk": 7
+},
+{
+  "fields": {
+    "bio": "Paulynn Yu is currently a 2nd year MBA student at the Wharton School. She is particularly interested in the payments industry and attended the 2014 Money20/20 conference in Aria, Las Vegas with peers from Wharton to learn more about FinTech, network and to have some fun (in learning, of course).",
+    "first_name": "Paulynn",
+    "last_name": "Yu",
+    "created": "2015-04-28T04:17:16.037Z",
+    "edited": "2015-04-28T04:17:16.037Z",
+    "avatar": "authors/paulynn-yu.jpg",
+    "slug": "paulynn-yu"
+  },
+  "model": "author.author",
+  "pk": 8
+},
+{
+  "fields": {
+    "bio": "Maria Halpern is the Career Advisor for Entrepreneurship and Startups in the Wharton MBA Career Management Office and is based in Silicon Valley.",
+    "first_name": "Maria",
+    "last_name": "Halpern",
+    "created": "2015-04-28T04:18:49.563Z",
+    "edited": "2015-04-28T04:18:49.563Z",
+    "avatar": "authors/maria-halpern.jpg",
+    "slug": "maria-halpern"
+  },
+  "model": "author.author",
+  "pk": 9
+},
+{
+  "fields": {
+    "bio": "Elise Carey is a second year MBA student at the Wharton School. She is passionate about improving consumer financial products and making financial literacy education accessible.",
+    "first_name": "Elise",
+    "last_name": "Carey",
+    "created": "2015-04-28T04:22:15.687Z",
+    "edited": "2015-04-28T04:22:15.687Z",
+    "avatar": "authors/elise-carey.jpg",
+    "slug": "elise-carey"
+  },
+  "model": "author.author",
+  "pk": 10
+},
+{
+  "fields": {
+    "bio": "Courtney Windler is a first-year MBA student at the Wharton School. With experience in financial services and an interest in technology, she joined Wharton FinTech to further explore how technology is impacting the evolution of consumer financial products.",
+    "first_name": "Courtney",
+    "last_name": "Windler",
+    "created": "2015-04-28T04:26:50.141Z",
+    "edited": "2015-04-28T04:26:50.141Z",
+    "avatar": "authors/courtney-windler.jpg",
+    "slug": "courtney-windler"
+  },
+  "model": "author.author",
+  "pk": 11
+},
+{
+  "fields": {
+    "bio": "Sarah Millar is a first-year MBA/MA student at Wharton's Lauder Institute, where she focuses on Latin America and the Spanish language. Prior to Wharton, she wrote an in-house market commentary at a private broker-dealer in New York, and will be spending her summer at a small start-up in Mexico City. Post-MBA, she hopes to work in social enterprise and impact investing with a heavy focus on BoP investments in Latin America.",
+    "first_name": "Sarah",
+    "last_name": "Millar",
+    "created": "2015-04-28T04:48:22.778Z",
+    "edited": "2015-04-28T04:48:22.778Z",
+    "avatar": "authors/sarah-millar.jpg",
+    "slug": "sarah-millar"
+  },
+  "model": "author.author",
+  "pk": 12
+}
+]

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block title %}Blog{{ block.super }}{% endblock %}
+
+{% block page-header %}Ideas in FinTech{% endblock %}
+
+{% block content %}
+    <div class="row">
+      <div class="col-md-8">
+        {% for blog in blogs %}
+        <article style="margin-bottom: 5em;">
+          <div>
+            <a href="{{ blog.get_absolute_url }}"><img src="{% if blog.banner_image %}{{ blog.banner_image.url }}{% else %}{% static "images/article-banners/banner-v1.jpg" %}{% endif %}" class="img-responsive img-thumbnail"></a>
+          </div>
+          <header>
+            <h2><a href="{{ blog.get_absolute_url }}">{{ blog.title }}</a></h2>
+            <p class="text-muted">Posted on {{ blog.dateline|date:"F j, Y" }} by {{ blog.byline }}</p>
+          </header>
+          <p>{{ blog.description }} <a href="{{ blog.get_absolute_url }}">Read more...</a></p>
+        </article>
+        {% endfor %}
+
+        <nav class="text-center">
+          {% bootstrap_pagination blogs %}
+        </nav>
+
+      </div>
+      <div class="col-md-4">
+        {% include "sidebar.html" %}
+      </div>
+    </div>
+{% endblock %}

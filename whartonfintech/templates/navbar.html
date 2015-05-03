@@ -22,9 +22,12 @@
           <li><a href="#home">{% bootstrap_icon "home" %}</a></li>
           <li><a href="#careers">Careers</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#ideas">Ideas</a></li>
+          <li><a href="#ideas">Blog</a></li>
           {% else %}
           <li{% if menu_context.0 == 'home' %} class="active"{% endif %}><a href="{% url 'home' %}">{% bootstrap_icon "home" %}</a></li>
+          <li{% if menu_context.0 == 'careers' %} class="active"{% endif %}><a href="{% url 'home' %}#careers">Careers</a></li>
+          <li{% if menu_context.0 == 'education' %} class="active"{% endif %}><a href="{% url 'home' %}#education">Education</a></li>
+          <li{% if menu_context.0 == 'blog' %} class="active"{% endif %}><a href="{% url 'blog:index' %}">Blog</a></li>
           {% endif %}
         </ul>
       </div><!-- /.navbar-collapse -->

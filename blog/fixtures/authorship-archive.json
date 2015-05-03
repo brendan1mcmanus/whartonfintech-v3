@@ -1,0 +1,245 @@
+[
+{
+  "fields": {
+    "blog": 1,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 1
+},
+{
+  "fields": {
+    "blog": 2,
+    "order": 1,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 2
+},
+{
+  "fields": {
+    "blog": 3,
+    "order": 1,
+    "author": 3
+  },
+  "model": "blog.authorship",
+  "pk": 3
+},
+{
+  "fields": {
+    "blog": 4,
+    "order": 1,
+    "author": 4
+  },
+  "model": "blog.authorship",
+  "pk": 4
+},
+{
+  "fields": {
+    "blog": 5,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 5
+},
+{
+  "fields": {
+    "blog": 6,
+    "order": 1,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 6
+},
+{
+  "fields": {
+    "blog": 6,
+    "order": 2,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 7
+},
+{
+  "fields": {
+    "blog": 7,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 8
+},
+{
+  "fields": {
+    "blog": 7,
+    "order": 2,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 9
+},
+{
+  "fields": {
+    "blog": 8,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 10
+},
+{
+  "fields": {
+    "blog": 9,
+    "order": 1,
+    "author": 5
+  },
+  "model": "blog.authorship",
+  "pk": 11
+},
+{
+  "fields": {
+    "blog": 10,
+    "order": 1,
+    "author": 6
+  },
+  "model": "blog.authorship",
+  "pk": 12
+},
+{
+  "fields": {
+    "blog": 11,
+    "order": 1,
+    "author": 7
+  },
+  "model": "blog.authorship",
+  "pk": 13
+},
+{
+  "fields": {
+    "blog": 12,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 14
+},
+{
+  "fields": {
+    "blog": 12,
+    "order": 2,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 15
+},
+{
+  "fields": {
+    "blog": 13,
+    "order": 1,
+    "author": 8
+  },
+  "model": "blog.authorship",
+  "pk": 16
+},
+{
+  "fields": {
+    "blog": 14,
+    "order": 1,
+    "author": 9
+  },
+  "model": "blog.authorship",
+  "pk": 17
+},
+{
+  "fields": {
+    "blog": 15,
+    "order": 1,
+    "author": 10
+  },
+  "model": "blog.authorship",
+  "pk": 18
+},
+{
+  "fields": {
+    "blog": 16,
+    "order": 1,
+    "author": 6
+  },
+  "model": "blog.authorship",
+  "pk": 19
+},
+{
+  "fields": {
+    "blog": 17,
+    "order": 1,
+    "author": 11
+  },
+  "model": "blog.authorship",
+  "pk": 20
+},
+{
+  "fields": {
+    "blog": 18,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 21
+},
+{
+  "fields": {
+    "blog": 18,
+    "order": 2,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 22
+},
+{
+  "fields": {
+    "blog": 19,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 23
+},
+{
+  "fields": {
+    "blog": 20,
+    "order": 1,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 24
+},
+{
+  "fields": {
+    "blog": 21,
+    "order": 1,
+    "author": 2
+  },
+  "model": "blog.authorship",
+  "pk": 25
+},
+{
+  "fields": {
+    "blog": 23,
+    "order": 1,
+    "author": 1
+  },
+  "model": "blog.authorship",
+  "pk": 26
+},
+{
+  "fields": {
+    "blog": 24,
+    "order": 1,
+    "author": 12
+  },
+  "model": "blog.authorship",
+  "pk": 27
+}
+]
