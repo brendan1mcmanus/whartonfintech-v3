@@ -1,1 +1,46 @@
 {% extends "base.html" %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+{% block title %}About Us{{ block.super }}{% endblock %}
+
+{% block container %}
+  <div style="background-color: #eee">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="{% static "images/article-banners/banner-v1.jpg" %}" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="content">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>About Us</h1>
+        </div>
+        {% bootstrap_messages %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <p class="lead">We are committed to <strong>education</strong>, <strong>career development</strong> and <strong>idea promotion</strong> by connecting innovative, established, disruptive and proven FinTech enterprises with students and industry professionals.</p>
+        <h3>Education</h3>
+        <p>Expose members to emerging technologies and concepts through club-generated content, workshops, information sessions, meetups, conferences and events.</p>
+        <h3>Career Development</h3>
+        <p>Build and grow relationships with FinTech companies to deliver internships and full time employment for students.</p>
+        <h3>Idea Promotion</h3>
+        <p>Establish Wharton and the University of Pennsylvania as the FinTech Industry Leader for ideas, growth and opportunity.</p>
+      </div>
+      <div class="col-md-4">
+        {% include "sidebar.html" %}
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

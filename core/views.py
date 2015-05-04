@@ -9,3 +9,8 @@ def home(request):
     'blog': blog,
     'is_homepage': True,
   })
+
+def about_us(request):
+  return render(request, 'pages/about.html', {
+    'menu_context': ('about-us',),
+  })

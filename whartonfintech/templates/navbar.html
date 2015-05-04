@@ -26,6 +26,7 @@
           <li><a href="#ideas" data-toggle="scrollTo">Blog</a></li>
           {% else %}
           <li{% if menu_context.0 == 'home' %} class="active"{% endif %}><a href="{% url 'home' %}">{% bootstrap_icon "home" %}</a></li>
+          <li{% if menu_context.0 == 'about-us' %} class="active"{% endif %}><a href="{% url 'about-us' %}">About Us</a></li>
           <li{% if menu_context.0 == 'careers' %} class="active"{% endif %}><a href="{% url 'home' %}#careers">Careers</a></li>
           <li{% if menu_context.0 == 'education' %} class="active"{% endif %}><a href="{% url 'home' %}#education">Education</a></li>
           <li{% if menu_context.0 == 'blog' %} class="active"{% endif %}><a href="{% url 'blog:index' %}">Blog</a></li>
