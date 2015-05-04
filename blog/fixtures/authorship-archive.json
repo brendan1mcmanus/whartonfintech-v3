@@ -241,5 +241,14 @@
   },
   "model": "blog.authorship",
   "pk": 27
+},
+{
+  "fields": {
+    "blog": 25,
+    "order": 1,
+    "author": 13
+  },
+  "model": "blog.authorship",
+  "pk": 28
 }
 ]

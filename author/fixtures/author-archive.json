@@ -154,5 +154,18 @@
   },
   "model": "author.author",
   "pk": 12
+},
+{
+  "fields": {
+    "bio": "James Chaukos is a first-year MBA student at The Wharton School and the VP of Content for Wharton FinTech.",
+    "first_name": "James",
+    "last_name": "Chaukos",
+    "created": "2015-05-04T16:00:46.712Z",
+    "edited": "2015-05-04T16:00:46.712Z",
+    "avatar": "authors/james-chaukos.jpg",
+    "slug": "james-chaukos"
+  },
+  "model": "author.author",
+  "pk": 13
 }
 ]
