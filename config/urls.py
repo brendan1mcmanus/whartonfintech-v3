@@ -26,6 +26,7 @@ urlpatterns += patterns('core.views',
   url(r'^blog/', include("blog.urls", namespace="blog")),
   url(r'^about/fintech-club/$', 'about_us', name='about-us'),
   url(r'^about/board/$', 'board', name='board'),
+  url(r'^about/sponsors/$', 'sponsors', name='sponsors'),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

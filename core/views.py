@@ -19,3 +19,8 @@ def board(request):
   return render(request, 'pages/board.html', {
     'menu_context': ('about-us','board',),
   })
+
+def sponsors(request):
+  return render(request, 'pages/sponsors.html', {
+    'menu_context': ('about-us','sponsors',),
+  })

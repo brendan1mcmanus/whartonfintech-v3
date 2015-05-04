@@ -25,6 +25,7 @@
             <ul class="dropdown-menu">
               <li><a href="{% url 'about-us' %}">Our Mission</a></li>
               <li><a href="{% url 'board' %}">Who We Are</a></li>
+              <li><a href="{% url 'sponsors' %}">Our Sponsors</a></li>
             </ul>
           </li>
           <li><a href="#careers" data-toggle="scrollTo">Careers</a></li>
@@ -37,6 +38,7 @@
             <ul class="dropdown-menu">
               <li{% if menu_context.1 == 'about-us' %} class="active"{% endif %}><a href="{% url 'about-us' %}">Our Mission</a></li>
               <li{% if menu_context.1 == 'board' %} class="active"{% endif %}><a href="{% url 'board' %}">Who We Are</a></li>
+              <li{% if menu_context.1 == 'sponsors' %} class="active"{% endif %}><a href="{% url 'sponsors' %}">Our Sponsors</a></li>
             </ul>
           </li>
           <li{% if menu_context.0 == 'careers' %} class="active"{% endif %}><a href="{% url 'home' %}#careers">Careers</a></li>

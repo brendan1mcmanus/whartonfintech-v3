@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Our Sponsors{{ block.super }}{% endblock %}
+
+{% block page-header %}Our Sponsors{% endblock %}
+
+{% block content %}
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="lead text-muted">Founding Sponsors</p>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="{% static "images/sponsors/commonbond.png" %}" class="img-responsive img-rounded" style="margin-left: auto; margin-right: auto;" />
+          </div>
+          <div class="col-md-8">
+            <h3 style="margin-top: 0;"><a href="https://commonbond.co/" target="_blank">CommonBond</a> <small>New York, NY</small></h3>
+            <p class="lead">Making Education More Accessible</p>
+            <p>CommonBond is a values-driven financial services company and they are reimagining finance as community, not commodity. Their mission is to deliver service through advocacy, simplicity through technology, community built on human connections, value, and a Social Promise to help empower underprivileged communities. The platform lowers the cost of graduate education in the U.S., saving borrowers money on their student loans and allows investors to earn a financial return.</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="{% static "images/sponsors/infrastructure.png" %}" class="img-responsive img-rounded" style="margin-left: auto; margin-right: auto;" />
+          </div>
+          <div class="col-md-8">
+            <h3 style="margin-top: 0;"><a href="http://www.infrastructuregroup.net/" target="_blank">Infrastructure Group, Inc.</a> <small>New York, NY</small></h3>
+            <p class="lead">Principal Investment and Asset Management</p>
+            <p>Infrastructure Group, Inc. provides asset management, principal investments, FinTech, and corporate development for United States and international clients. Clients include corporates, partnerships, investment firms, and family businesses in technology, FinTech, telecom, alternative investments, finance (banking and venture), trade finance, and real estate with companies, projects and investors located in the Americas, the EU, the GCC, and Asia.</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="{% static "images/sponsors/pave.png" %}" class="img-responsive img-rounded" style="margin-left: auto; margin-right: auto;" />
+          </div>
+          <div class="col-md-8">
+            <h3 style="margin-top: 0;"><a href="https://www.pave.com/" target="_blank">Pave</a> <small>New York, NY</small></h3>
+            <p class="lead">Re-inventing the personal loan for our generation</p>
+            <blockquote style="font-size:14px;">"P2P lending is evolving – everyone’s been focused on pricing and rates, which are key components, but what we haven’t yet seen is a holistic approach. At Pave, we believe that the rate is just one part of the experience. We want to provide a funding product that enables the success of the future generation. We believe our users want their money from a brand they trust and that understands their needs beyond just a financial relationship. We're more than just a loan." <small>Oren Bass, CEO of Pave</small></blockquote>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="{% static "images/sponsors/wrds.png" %}" class="img-responsive img-rounded" style="margin-left: auto; margin-right: auto;" />
+          </div>
+          <div class="col-md-8">
+            <h3 style="margin-top: 0;"><a href="http://www.whartonwrds.com/" target="_blank">Wharton Research Data Services</a> <small>Philadelphia, PA</small></h3>
+            <p class="lead">The Global Standard for Business Research</p>
+            <p>WRDS is a business unit of the Wharton School and is the leading global financial research database. WRDS is built on a cloud computing data infrastructure platform that provides comprehensive research tools and utilities to enable researchers to efficiently analyze work with 200+ terabytes of data from 600+ integrated datasets that are licensed from 40+ partner vendors.</p>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+{% endblock %}
