@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from blog.models import Blog
 
 # Create your views here.
@@ -29,3 +29,6 @@ def contact_us(request):
   return render(request, 'pages/contact-us.html', {
     'menu_context': ('contact-us',),
   })
+
+def index_redirect(request, url=''):
+  return redirect("/"+url, permanent=True)
