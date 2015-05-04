@@ -27,6 +27,7 @@ urlpatterns += patterns('core.views',
   url(r'^about/fintech-club/$', 'about_us', name='about-us'),
   url(r'^about/board/$', 'board', name='board'),
   url(r'^about/sponsors/$', 'sponsors', name='sponsors'),
+  url(r'^about/contact-us/$', 'contact_us', name='contact-us'),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -24,3 +24,8 @@ def sponsors(request):
   return render(request, 'pages/sponsors.html', {
     'menu_context': ('about-us','sponsors',),
   })
+
+def contact_us(request):
+  return render(request, 'pages/contact-us.html', {
+    'menu_context': ('contact-us',),
+  })
