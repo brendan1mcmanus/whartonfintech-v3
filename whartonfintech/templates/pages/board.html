@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+{% block title %}Who We Are{{ block.super }}{% endblock %}
+
+{% block container %}
+  <div style="background-color: #eee">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="{% static "images/article-banners/wharton-fintech-visits-second-market.jpg" %}" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="content">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>Who We Are</h1>
+        </div>
+        {% bootstrap_messages %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Executive Board</h3>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/daniel-mcauley.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Daniel McAuley</h3>
+                <p class="text-muted text-center">Co-President</p>
+                <p class="text-center"><a href="https://twitter.com/AlphaFishing" target="_blank">@alphafishing</a> | <a href="http://www.linkedin.com/in/danielmcauley/" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/steve-weiner.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Steve Weiner</h3>
+                <p class="text-muted text-center">Co-President</p>
+                <p class="text-center"><a href="https://twitter.com/sweiner2008" target="_blank">@sweiner2008</a> | <a href="http://www.linkedin.com/pub/steven-weiner/18/335/2a5/" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/sudipta-bandyopadhyay.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Sudipta Bandyopadhyay</h3>
+                <p class="text-muted text-center">VP of Technology</p>
+                <p class="text-center"><a href="https://twitter.com/sudiptab" target="_blank">@sudiptab</a> | <a href="http://www.linkedin.com/in/sbandyopadhyay/" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/richard-bhamb.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Richard Bhamb</h3>
+                <p class="text-muted text-center">VP of Careers</p>
+                <p class="text-center"><a href="https://www.linkedin.com/pub/richard-bhamb/1a/baa/1ba" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/james-chaukos.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">James Chaukos</h3>
+                <p class="text-muted text-center">VP of Content</p>
+                <p class="text-center"><a href="https://twitter.com/jchaukos" target="_blank">@jchaukos</a> | <a href="http://www.linkedin.com/in/jchaukos" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/sasha-dobrolioubov.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Sasha Dobrolioubov</h3>
+                <p class="text-muted text-center">VP of Education</p>
+                <p class="text-center"><a href="https://twitter.com/sdobrol" target="_blank">@sdobrol</a> | <a href="http://www.linkedin.com/pub/sasha-dobrolioubov/11/953/5a3" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/carissa-feria.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Carissa Feria</h3>
+                <p class="text-muted text-center">VP of Finance</p>
+                <p class="text-center"><a href="http://www.linkedin.com/pub/carissa-feria/10/960/a38" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/cameron-peake.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Cameron Peake</h3>
+                <p class="text-muted text-center">VP of Communications</p>
+                <p class="text-center"><a href="https://twitter.com/cameronpeake" target="_blank">@cameronpeake</a> | <a href="http://www.linkedin.com/in/cameronpeake" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Advisors</h3>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/matt-carey.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Matt Carey</h3>
+                <p class="text-muted text-center">Advisor</p>
+                <p class="text-center"><a href="https://twitter.com/careymatthewr" target="_blank">@careymatthewr</a> | <a href="http://www.linkedin.com/in/matthewrobertcarey" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <img src="{% static "images/board/jules-van-binsbergen.jpg" %}" class="img-circle" />
+              <div class="caption">
+                <h3 class="text-center">Prof. Jules van Binsbergen</h3>
+                <p class="text-muted text-center">Faculty Advisor</p>
+                <p class="text-center"><a href="http://www.linkedin.com/pub/jules-van-binsbergen/2/21a/a7b" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        {% include "sidebar.html" %}
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

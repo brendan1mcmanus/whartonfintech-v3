@@ -25,6 +25,7 @@ urlpatterns += patterns('core.views',
   url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
   url(r'^blog/', include("blog.urls", namespace="blog")),
   url(r'^about/fintech-club/$', 'about_us', name='about-us'),
+  url(r'^about/board/$', 'board', name='board'),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

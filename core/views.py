@@ -12,5 +12,10 @@ def home(request):
 
 def about_us(request):
   return render(request, 'pages/about.html', {
-    'menu_context': ('about-us',),
+    'menu_context': ('about-us','about-us',),
+  })
+
+def board(request):
+  return render(request, 'pages/board.html', {
+    'menu_context': ('about-us','board',),
   })

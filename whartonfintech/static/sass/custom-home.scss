@@ -6,6 +6,13 @@
   transform: translate3d(0px, 0px, 0px); // Necessary per https://github.com/pixelcog/parallax.js/issues/13
 }
 
+// Hover menu effect. Inspired by: http://stackoverflow.com/a/8878666
+@media (min-width: $grid-float-breakpoint) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
 .anchor {
   // Prevent the top of anchor being cut off by the fixed menu, per http://stackoverflow.com/a/13184714
   display: block;
