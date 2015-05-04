@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 # Create your models here.
 class Blog(models.Model):
   title = models.CharField(max_length=128)
-  slug = models.SlugField()
+  slug = models.SlugField(max_length=100)
   description = models.TextField()
   text = models.TextField()
   dateline = models.DateField()
