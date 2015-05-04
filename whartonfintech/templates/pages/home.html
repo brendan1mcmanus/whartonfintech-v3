@@ -18,7 +18,7 @@
           <div class="col-xs-12 col-md-10 col-md-offset-1">
             <p>"We are in the early stages of the financial services industry’s version of the Industrial&nbsp;Revolution."</p>
             <p class="text-right" style="padding-top:0;"><small>-Tom Loverro, RRE Ventures</small></p>
-            <p class="text-center">{% bootstrap_icon 'chevron-down' %}</p>
+            <p class="text-center"><a href="#about-us" data-toggle="scrollTo">{% bootstrap_icon 'chevron-down' %}</a></p>
           </div>
         </div>
       </div>
@@ -111,5 +111,14 @@
 {% block additional-scripts %}
   <script src="{% static "js/parallax.min.js" %}"></script>
   <script src="{% static "js/viewport-units-buggyfill.js" %}"></script>
-  <script>window.viewportUnitsBuggyfill.init();</script>
+  <script src="{% static "js/jquery.scrollTo.min.js" %}"></script>
+  <script>
+    window.viewportUnitsBuggyfill.init();
+    $(document).on('click.scrollTo.data-api', '[data-toggle="scrollTo"]', function (e) {
+      var $this = $(this);
+      var href  = $this.attr('href');
+      if ($this.is('a')) e.preventDefault();
+      $.scrollTo(href,'slow');
+    });
+  </script>
 {% endblock %}

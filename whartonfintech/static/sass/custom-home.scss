@@ -50,6 +50,10 @@
     color: #eee;
     padding-top: 1.5em;
     @include gradient-vertical(rgba(#000,0),rgba(#000,0.65));
+
+    a {
+      color: #eee;
+    }
   }
 }
 
