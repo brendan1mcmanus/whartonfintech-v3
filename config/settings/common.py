@@ -47,6 +47,7 @@ LOCAL_APPS = (
     'whartonfintech.users',  # custom users app
     # Your stuff: custom apps go here
     'core',
+    'file_upload',
     'author',
     'blog',
 )
