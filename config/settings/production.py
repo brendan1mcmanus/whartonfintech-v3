@@ -61,7 +61,7 @@ INSTALLED_APPS += ("gunicorn", )
 INSTALLED_APPS += (
     'storages',
 )
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+DEFAULT_FILE_STORAGE = 'core.custom_storages.MediaStorage'
 
 AWS_ACCESS_KEY_ID = env('DJANGO_AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = env('DJANGO_AWS_SECRET_ACCESS_KEY')
@@ -82,13 +82,15 @@ AWS_HEADERS = {
 }
 
 # URL that handles the media served from MEDIA_ROOT, used for managing stored files.
-MEDIA_URL = 'https://s3.amazonaws.com/%s/' % AWS_STORAGE_BUCKET_NAME
+MEDIAFILES_LOCATION = env('DJANGO_MEDIAFILES_LOCATION', default='media')
+MEDIA_URL = 'https://s3.amazonaws.com/%s/%s/' % (AWS_STORAGE_BUCKET_NAME, MEDIAFILES_LOCATION)
 
 # Static Assests
 # ------------------------
 
-STATICFILES_STORAGE = DEFAULT_FILE_STORAGE
-STATIC_URL = MEDIA_URL
+STATICFILES_STORAGE = 'core.custom_storages.StaticStorage'
+STATICFILES_LOCATION = env('DJANGO_STATICFILES_LOCATION', default='static')
+STATIC_URL = 'https://s3.amazonaws.com/%s/%s/' % (AWS_STORAGE_BUCKET_NAME, STATICFILES_LOCATION)
 
 # See: https://github.com/antonagestam/collectfast
 # For Django 1.7+, 'collectfast' should come before 'django.contrib.staticfiles'
