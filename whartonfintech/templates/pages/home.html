@@ -120,9 +120,5 @@
       if ($this.is('a')) e.preventDefault();
       $.scrollTo(href,'slow');
     });
-    $(document).on('click', '#blog-link', function(e) {
-      e.preventDefault();
-      window.location.href = "{% url 'blog:index' %}";
-    });
   </script>
 {% endblock %}

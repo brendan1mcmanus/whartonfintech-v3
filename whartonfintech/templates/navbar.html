@@ -30,7 +30,6 @@
           </li>
           <li><a href="#careers" data-toggle="scrollTo">Careers</a></li>
           <li><a href="#education" data-toggle="scrollTo">Education</a></li>
-          <li><a href="#ideas" id="blog-link">Blog</a></li>
           {% else %}
           <li{% if menu_context.0 == 'home' %} class="active"{% endif %}><a href="{% url 'home' %}">{% bootstrap_icon "home" %}</a></li>
           <li class="dropdown{% if menu_context.0 == 'about-us' %} active{% endif %}">
@@ -43,8 +42,8 @@
           </li>
           <li{% if menu_context.0 == 'careers' %} class="active"{% endif %}><a href="{% url 'home' %}#careers">Careers</a></li>
           <li{% if menu_context.0 == 'education' %} class="active"{% endif %}><a href="{% url 'home' %}#education">Education</a></li>
-          <li{% if menu_context.0 == 'blog' %} class="active"{% endif %}><a href="{% url 'blog:index' %}">Blog</a></li>
           {% endif %}
+          <li{% if menu_context.0 == 'blog' %} class="active"{% endif %}><a href="{% url 'blog:index' %}" data-target="#ideas">Blog</a></li>
           <li{% if menu_context.0 == 'contact-us' %} class="active"{% endif %}><a href="{% url 'contact-us' %}">Join</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
