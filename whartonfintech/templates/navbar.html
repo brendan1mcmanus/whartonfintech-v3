@@ -30,7 +30,7 @@
           </li>
           <li><a href="#careers" data-toggle="scrollTo">Careers</a></li>
           <li><a href="#education" data-toggle="scrollTo">Education</a></li>
-          <li><a href="#ideas" data-toggle="scrollTo">Blog</a></li>
+          <li><a href="#ideas" id="blog-link">Blog</a></li>
           {% else %}
           <li{% if menu_context.0 == 'home' %} class="active"{% endif %}><a href="{% url 'home' %}">{% bootstrap_icon "home" %}</a></li>
           <li class="dropdown{% if menu_context.0 == 'about-us' %} active{% endif %}">
