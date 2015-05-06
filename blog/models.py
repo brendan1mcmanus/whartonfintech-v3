@@ -10,6 +10,7 @@ class Blog(models.Model):
   dateline = models.DateField()
   authors = models.ManyToManyField('author.Author', through='blog.Authorship', related_name='blogs')
   banner_image = models.ImageField(upload_to='article-banners', blank=True)
+  file_uploads = models.ManyToManyField('file_upload.FileUpload', related_name='blogs')
   published = models.BooleanField(default=False)
   created = models.DateTimeField(auto_now_add=True)
   edited = models.DateTimeField(auto_now=True)
