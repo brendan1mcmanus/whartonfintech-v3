@@ -50,6 +50,7 @@ LOCAL_APPS = (
     'file_upload',
     'author',
     'blog',
+    'contact_request',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
