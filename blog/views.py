@@ -1,4 +1,5 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.http import Http404
 from django.shortcuts import render
 from .models import Blog
 
@@ -23,8 +24,11 @@ def index(request):
   })
 
 def post(request, slug):
-  # @todo: raise a 404 error if not found
-  blog = Blog.objects.get(slug=slug)
+  try:
+    blog = Blog.objects.get(slug=slug)
+  except Blog.DoesNotExist:
+    raise Http404("Blog does not exist")
+
   authors = blog.get_authors()
   return render(request, 'blog/post.html', {
     'blog': blog,
