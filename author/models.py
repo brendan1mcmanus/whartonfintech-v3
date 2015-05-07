@@ -5,7 +5,7 @@ class Author(models.Model):
   first_name = models.CharField(max_length=32)
   last_name = models.CharField(max_length=32)
   slug = models.SlugField()
-  avatar = models.ImageField(upload_to="authors")
+  avatar = models.ImageField(upload_to="authors", blank=True)
   bio = models.TextField()
   created = models.DateTimeField(auto_now_add=True)
   edited = models.DateTimeField(auto_now=True)
