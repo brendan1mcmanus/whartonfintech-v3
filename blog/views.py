@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import Http404
 from django.shortcuts import render
@@ -28,6 +29,14 @@ def post(request, slug):
     blog = Blog.objects.get(slug=slug)
   except Blog.DoesNotExist:
     raise Http404("Blog does not exist")
+
+  if not blog.published:
+    if request.GET.get('password') == blog.password:
+      messages.error(request, '<p><strong>Warning!</strong> This blog is unpublished, and the public cannot see it. You are seeing this only because you have been given a <strong>private link</strong> to preview this post.</p><p><strong>Please do not share this link!</strong></p>')
+    elif request.user.is_staff:
+      messages.error(request,'<p><strong>Warning!</strong> This blog is unpublished, and the public cannot see it. You are seeing this only because you are logged in as a staff member.</p><p>Want to share this unpublished post with someone who isn\'t a staff member? Use <a href="{0}">this secure link</a>. <strong>Share it wisely.</strong></p>'.format(blog.get_private_url()))
+    else:
+      raise Http404("Blog is unpublished")
 
   authors = blog.get_authors()
   return render(request, 'blog/post.html', {
