@@ -13,14 +13,6 @@
   }
 }
 
-.anchor {
-  // Prevent the top of anchor being cut off by the fixed menu, per http://stackoverflow.com/a/13184714
-  display: block;
-  position: relative;
-  top: (-$navbar-height);
-  visibility: hidden;
-}
-
 %vertical-align {
   position: relative;
   top: 50%;

@@ -30,6 +30,14 @@ body {
   padding-bottom: 33px;
 }
 
+.anchor {
+  // Prevent the top of anchor being cut off by the fixed menu, per http://stackoverflow.com/a/13184714
+  display: block;
+  position: relative;
+  top: (-$navbar-height);
+  visibility: hidden;
+}
+
 .lead {
   line-height: $line-height-base;
 }
