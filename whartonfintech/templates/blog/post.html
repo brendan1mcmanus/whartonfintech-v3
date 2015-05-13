@@ -25,5 +25,6 @@
     {% if author.avatar %}<img src="{{ author.avatar.url }}" class="img-rounded img-responsive pull-left" style="margin-right: 1em; margin-bottom: 1em;" />{% endif %}
     <p><em>{{ author.bio|safe }}</em></p>
     {% endfor %}
+    <div class="clearfix"></div>
   {% endif %}
 {% endblock %}
