@@ -150,6 +150,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
     # Your stuff: custom template context processors go here
+    'core.context_processors.third_party_integrations',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
@@ -254,3 +255,7 @@ LOGGING = {
 }
 
 # Your common stuff: Below this line define 3rd party library settings
+
+# Analytics stuff
+ANALYTICS_ENABLED = env.bool('ANALYTICS_ENABLED', False)
+GOOGLE_ANALYTICS_TRACKING_ID = env('GOOGLE_ANALYTICS_TRACKING_ID', default=None)
