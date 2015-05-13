@@ -20,6 +20,15 @@ class FileUploadInline(admin.TabularInline):
     return '-'
 
 class BlogAdmin(admin.ModelAdmin):
+  fieldsets = (
+    (None, {
+      'fields': ('title', 'slug', 'description', 'text', 'dateline', 'banner_image', 'published')
+    }),
+    ('Customize Sidebar', {
+      'classes': ('collapse',),
+      'fields': ('sidebar_first',)
+    }),
+  )
   inlines = (AuthorshipInline,FileUploadInline,)
   prepopulated_fields = {"slug": ("title",)}
   exclude = ('file_uploads',)

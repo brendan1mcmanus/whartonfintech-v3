@@ -24,16 +24,19 @@
     </div>
 
     <div class="row">
-      <div class="col-md-8">
+      {% if blog.sidebar_first %}<div class="col-md-4 col-md-push-8">
+        {% include "sidebar.html" %}
+      </div>{% endif %}
+      <div class="col-md-8{% if blog.sidebar_first %} col-md-pull-4{% endif %}">
         <p class="text-muted">Posted on {% block blog-date %}{% endblock %} by {% block blog-author %}{% endblock %}</p>
         <div>
           {% block blog-body %}{% endblock %}
         </div>
         {% block blog-author-section %}{% endblock %}
       </div>
-      <div class="col-md-4">
+      {% if not blog.sidebar_first %}<div class="col-md-4">
         {% include "sidebar.html" %}
-      </div>
+      </div>{% endif %}
     </div>
 
   </div>
