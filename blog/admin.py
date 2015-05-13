@@ -26,7 +26,7 @@ class BlogAdmin(admin.ModelAdmin):
     }),
     ('Customize Sidebar', {
       'classes': ('collapse',),
-      'fields': ('sidebar_first',)
+      'fields': ('sidebar_first', 'sidebar_html')
     }),
   )
   inlines = (AuthorshipInline,FileUploadInline,)

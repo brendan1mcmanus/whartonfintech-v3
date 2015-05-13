@@ -25,7 +25,7 @@
 
     <div class="row">
       {% if blog.sidebar_first %}<div class="col-md-4 col-md-push-8">
-        {% include "sidebar.html" %}
+        {% if blog.sidebar_html %}{{ blog.sidebar_html|safe }}{% else %}{% include "sidebar.html" %}{% endif %}
       </div>{% endif %}
       <div class="col-md-8{% if blog.sidebar_first %} col-md-pull-4{% endif %}">
         <p class="text-muted">Posted on {% block blog-date %}{% endblock %} by {% block blog-author %}{% endblock %}</p>
@@ -35,7 +35,7 @@
         {% block blog-author-section %}{% endblock %}
       </div>
       {% if not blog.sidebar_first %}<div class="col-md-4">
-        {% include "sidebar.html" %}
+        {% if blog.sidebar_html %}{{ blog.sidebar_html|safe }}{% else %}{% include "sidebar.html" %}{% endif %}
       </div>{% endif %}
     </div>
 
