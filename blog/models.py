@@ -19,7 +19,7 @@ class Blog(models.Model):
     verbose_name="Show sidebar HTML first, before blog post",
     help_text="Leave unchecked on most blog posts. Useful if the sidebar should be presented before the blog on a mobile display. Sidebar will still appear to the right of the blog post on regular displays."
   )
-  sidebar_html = models.TextField()
+  sidebar_html = models.TextField(blank=True)
   password = models.CharField(max_length=24, editable=False)
   created = models.DateTimeField(auto_now_add=True)
   edited = models.DateTimeField(auto_now=True)
