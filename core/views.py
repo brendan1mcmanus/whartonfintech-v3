@@ -25,10 +25,13 @@ def sponsors(request):
     'menu_context': ('about-us','sponsors',),
   })
 
-def contact_us(request):
-  return render(request, 'pages/contact-us.html', {
-    'menu_context': ('contact-us',),
+def join(request):
+  return render(request, 'pages/join.html', {
+    'menu_context': ('join',),
   })
+
+def contact_us_redirect(request):
+  return redirect('join', permanent=True)
 
 def index_redirect(request, url=''):
   return redirect("/"+url, permanent=True)

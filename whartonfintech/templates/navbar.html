@@ -44,7 +44,7 @@
           <li{% if menu_context.0 == 'education' %} class="active"{% endif %}><a href="{% url 'home' %}#education">Education</a></li>
           {% endif %}
           <li{% if menu_context.0 == 'blog' %} class="active"{% endif %}><a href="{% url 'blog:index' %}" data-target="#ideas">Blog</a></li>
-          <li{% if menu_context.0 == 'contact-us' %} class="active"{% endif %}><a href="{% url 'contact-us' %}">Join</a></li>
+          <li{% if menu_context.0 == 'join' %} class="active"{% endif %}><a href="{% url 'join' %}">Join</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
