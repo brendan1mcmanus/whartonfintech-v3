@@ -55,7 +55,7 @@
           </div>
           <p class="lead">We at Wharton FinTech are continuously building our network of industry contacts, including innovative companies, investors and academic centers, to deliver on our dual missions of establishing ourselves as thought leaders in the sector and sourcing internship and full-time employment opportunities for students.</p>
           <p class="lead">We have successfully sourced opportunities at leading companies such as <a href="https://www.wealthfront.com/" target="_blank">Wealthfront</a>, <a href="https://www.nerdwallet.com/" target="_blank">NerdWallet</a>, <a href="https://www.apple.com/apple-pay/" target="_blank">Apple Pay</a>, <a href="https://www.personalcapital.com/" target="_blank">Personal Capital</a>, and <a href="http://www.mastercard.us/" target="_blank">MasterCard</a>, in addition to building relationships with accelerators and investors such as <a href="http://www.fintech.io/" target="_blank">FinTech Collective</a>, <a href="http://ventures.citi.com/citi_ventures/homepage/index.htm" target="_blank">Citi Ventures</a>, <a href="http://www.barclaysaccelerator.com/" target="_blank">Barclays</a> and <a href="http://www.techstars.com/" target="_blank">Techstars</a>.</p>
-          <p class="lead">If you're interested in learning more or in advertising a career opportunity to our member base, please contact us at <a href="mailto:careers@whartonfintech.org">careers@whartonfintech.org</a>.</p>
+          <p class="lead">If you're interested in learning more or in advertising a career opportunity to our member base, <a href="{% url 'contact' %}?current_path={{ request.build_absolute_uri|urlencode }}%23careers" data-toggle="modal" data-target="#contact-request-modal" rel="nofollow">please contact us</a>.</p>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
           <div class="page-header">
             <h2>Promoting education and awareness of the FinTech industry</h2>
           </div>
-          <p class="lead">We offer speaker series, hands-on projects and panel discussions to engage students and professionals with the latest ideas, trends and developments in FinTech. Please contact us at <a href="mailto:education@whartonfintech.org">education@whartonfintech.org</a> for details if you'd like to get involved.</p>
+          <p class="lead">We offer speaker series, hands-on projects and panel discussions to engage students and professionals with the latest ideas, trends and developments in FinTech. <a href="{% url 'contact' %}?current_path={{ request.build_absolute_uri|urlencode }}%23education" data-toggle="modal" data-target="#contact-request-modal" rel="nofollow">Please contact us</a> for details if you'd like to get involved.</p>
         </div>
       </div>
       <div class="row">
@@ -106,6 +106,10 @@
     </div>
   </div>
 
+{% endblock %}
+
+{% block modal %}
+  {% include 'contact_request/contact_modal.html' %}
 {% endblock %}
 
 {% block additional-scripts %}

@@ -27,10 +27,16 @@ urlpatterns += patterns('core.views',
   url(r'^about/fintech-club/$', 'about_us', name='about-us'),
   url(r'^about/board/$', 'board', name='board'),
   url(r'^about/sponsors/$', 'sponsors', name='sponsors'),
-  url(r'^about/contact-us/$', 'contact_us', name='contact-us'),
+  url(r'^join/$', 'join', name='join'),
+  # Redirect pre-existing URLs to maintain backwards compatibility with inbound links.
+  url(r'^about/contact-us/$', 'contact_us_redirect'),
   # Capture all URLs that with index.html
   url(r'^index.html$', 'index_redirect'),
   url(r'^(?P<url>.+/)index.html$', 'index_redirect'),
+)
+
+urlpatterns += patterns('contact_request.views',
+  url(r'^contact/$', 'contact', name='contact'),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

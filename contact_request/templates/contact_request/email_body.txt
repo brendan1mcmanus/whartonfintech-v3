@@ -1,0 +1,8 @@
+{{ contact_request.message|safe }}
+
+{% if contact_request.name %}Name: {{ contact_request.name|safe }}
+{% endif %}{% if contact_request.email %}Email: {{ contact_request.email|safe }}
+{% endif %}{% if contact_request.purpose %}Purpose: {{ contact_request.get_purpose_display|safe }}
+{% endif %}{% if contact_request.url %}URL: {{ contact_request.url|safe }}
+{% endif %}{% if contact_request.ip_address %}IP Address: {{ contact_request.ip_address|safe }}
+{% endif %}
