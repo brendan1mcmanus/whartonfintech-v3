@@ -8,6 +8,7 @@ class ContactRequestForm(forms.ModelForm):
   class Meta:
     model = ContactRequest
     fields = [
+      'purpose',
       'message',
       'name',
       'email',
@@ -22,6 +23,7 @@ class ContactRequestForm(forms.ModelForm):
     self.helper.field_class = 'col-sm-10'
     self.helper.layout = helper.Layout(
       'current_path',
+      'purpose',
       layout.Field('message', placeholder="Please send us your comments or questions!"),
       layout.Field('name',    placeholder="Your full name"),
       layout.Field('email',   placeholder="Your email address"),

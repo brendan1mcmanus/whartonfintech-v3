@@ -12,7 +12,8 @@ def process_contact_requests(crid):
       'contact_request': contact_request,
     }),
     'from_email': formataddr((contact_request.name,'no-reply@whartonfintech.org')),
-    'to': ['contact@whartonfintech.org'],
+    'to': ContactRequest.TO_EMAILS[contact_request.purpose],
+    'cc': ContactRequest.CC_EMAILS[contact_request.purpose],
     'bcc': ['contact_monitor@whartonfintech.org'],
     'headers': {
       'Reply-To': formataddr((contact_request.name,contact_request.email)),
