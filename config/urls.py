@@ -35,4 +35,8 @@ urlpatterns += patterns('core.views',
   url(r'^(?P<url>.+/)index.html$', 'index_redirect'),
 )
 
+urlpatterns += patterns('contact_request.views',
+  url(r'^contact/$', 'contact', name='contact'),
+)
+
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -32,3 +32,4 @@ pytz==2015.2
 
 # Your custom requirements go here
 django-bootstrap3==5.4.0
+django-ipware==1.1.0
