@@ -17,7 +17,8 @@ def contact(request):
       return redirect(contact_request.url or 'home') # Redirect after POST
   else:
     contact_request_form = ContactRequestForm(initial={'current_path':request.GET.get('current_path',request.build_absolute_uri())}) # An unbound form
-  return render(request, 'contact_request/contact_page.html', {
+  template_name = 'contact_request/contact_modal_form.html' if request.is_ajax() else 'contact_request/contact_page.html'
+  return render(request, template_name, {
     'contact_request_form': contact_request_form,
     'noindex': True,
   })
