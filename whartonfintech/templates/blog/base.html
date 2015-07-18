@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load bootstrap3 %}
+{% load crispy_forms_tags %}
 
 {% block container %}
   <div style="background-color: #eee">
@@ -17,11 +18,17 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="page-header">
-          <h1>{% block blog-title %}{% endblock %}</h1>
+          <h1{% if edit_mode %} id="title-editor" contenteditable="true"{% endif %}>{% block blog-title %}{% endblock %}</h1>
         </div>
         {% bootstrap_messages %}
       </div>
     </div>
+
+    {% if edit_mode %}
+    <form action="" method="post" id="blog-inline-edit-form">
+      {% crispy blog_inline_edit_form %}
+    </form>
+    {% endif %}
 
     <div class="row">
       {% if blog.sidebar_first %}<div class="col-md-4 col-md-push-8">
@@ -29,7 +36,7 @@
       </div>{% endif %}
       <div class="col-md-8{% if blog.sidebar_first %} col-md-pull-4{% endif %}">
         <p class="text-muted">Posted on {% block blog-date %}{% endblock %} by {% block blog-author %}{% endblock %}</p>
-        <div>
+        <div{% if edit_mode %} id="content-editor" contenteditable="true"{% endif %}>
           {% block blog-body %}{% endblock %}
         </div>
         {% block blog-author-section %}{% endblock %}
@@ -40,4 +47,49 @@
     </div>
 
   </div>
+{% endblock %}
+
+{% block additional-scripts %}
+  {% if edit_mode %}
+    <script src="https://cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script>
+    <script>
+      CKEDITOR.disableAutoInline = true;
+      CKEDITOR.inline('title-editor', {
+        basicEntities: false,
+        toolbar: [
+          [ 'Cut', 'Copy', 'Paste', '-', 'Undo', 'Redo' ],
+          [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ]
+        ]
+      });
+      CKEDITOR.inline('content-editor', {
+        toolbar: [
+          [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],
+          [ 'Find', 'Replace' ],
+          '/',
+          [ 'Format' ],
+          [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ],
+          [ 'TextColor', 'BGColor' ],
+          [ 'Link', 'Unlink', 'Anchor' ],
+          '/',
+          [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', 'Blockquote' ],
+          [ 'Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe' ]
+        ],
+        format_h1: { element: 'h3' },
+        format_h2: { element: 'h4' },
+        format_h3: { element: 'h5' },
+        format_tags: 'p;h1;h2;h3;pre',
+        disableNativeSpellChecker: false
+      });
+
+      $(document).ready(function() {
+        $('#blog-inline-edit-form-submit').on('click', function(e) {
+          e.preventDefault();
+          var $form = $('#blog-inline-edit-form');
+          $form.find('#id_title').val(CKEDITOR.instances["title-editor"].getData());
+          $form.find('#id_text').val(CKEDITOR.instances["content-editor"].getData());
+          $form.submit();
+        });
+      });
+    </script>
+  {% endif %}
 {% endblock %}
