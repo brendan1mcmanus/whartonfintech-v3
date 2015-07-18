@@ -40,6 +40,14 @@ class Blog(models.Model):
       'password': self.password,
     })
 
+  def get_edit_url(self):
+    return reverse('blog:edit', args=[self.slug])
+
+  def get_private_edit_url(self):
+    return self.get_edit_url() + '?' + urlencode({
+      'password': self.password,
+    })
+
   def get_authors(self):
     return self.authors.order_by('authorship')
 
