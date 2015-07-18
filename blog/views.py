@@ -34,10 +34,10 @@ def post(request, slug):
   is_staff = request.user.is_staff
 
   if not blog.published:
-    if is_authenticated:
-      messages.error(request, '<p><strong>Warning!</strong> This blog is unpublished, and the public cannot see it. You are seeing this only because you have been given a <strong>private link</strong> to preview this post.</p><p><strong>Please do not share this link!</strong></p>')
-    elif is_staff:
+    if is_staff:
       messages.error(request,'<p><strong>Warning!</strong> This blog is unpublished, and the public cannot see it. You are seeing this only because you are logged in as a staff member.</p><p>Want to share this unpublished post with someone who isn\'t a staff member? Use <a href="{0}">this secure link</a>. <strong>Share it wisely.</strong></p>'.format(blog.get_private_url()))
+    elif is_authenticated:
+      messages.error(request, '<p><strong>Warning!</strong> This blog is unpublished, and the public cannot see it. You are seeing this only because you have been given a <strong>private link</strong> to preview this post.</p><p><strong>Please do not share this link!</strong></p>')
     else:
       raise Http404("Blog is unpublished")
 
