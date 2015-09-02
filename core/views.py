@@ -30,11 +30,6 @@ def join(request):
     'menu_context': ('join',),
   })
 
-def legal(request):
-return render(request, 'pages/legal.html', {
-  'menu_context': ('legal',),
-})
-
 def contact_us_redirect(request):
   return redirect('join', permanent=True)
 
