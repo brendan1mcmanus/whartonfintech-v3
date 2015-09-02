@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+{% block title %}Legal{{ block.super }}{% endblock %}
+
+{% block container %}
+  <div style="background-color: #eee">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="{% static "images/article-banners/banner-v1.jpg" %}" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="content">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>Legal</h1>
+        </div>
+        {% bootstrap_messages %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <p class="lead">This blog does accept affiliate links to some select companies. We have an affiliate relationship with select peer-to-peer lending companies and we may be compensated when a reader clicks on an affiliate link, if that reader goes on to become an investor or borrower with the peer-to-peer lending company. Any compensation we receive goes towards promoting the FinTech Club by raising funds for student events, lunch and learns, and conferences. The views and opinions expressed on this blog are purely the writers’ own.</p>
+      </div>
+      <div class="col-md-4">
+        {% include "sidebar.html" %}
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

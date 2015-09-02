@@ -28,6 +28,7 @@ urlpatterns += patterns('core.views',
   url(r'^about/board/$', 'board', name='board'),
   url(r'^about/sponsors/$', 'sponsors', name='sponsors'),
   url(r'^join/$', 'join', name='join'),
+  url(r'^legal/$', 'legal', name='legal'),
   # Redirect pre-existing URLs to maintain backwards compatibility with inbound links.
   url(r'^about/contact-us/$', 'contact_us_redirect'),
   # Capture all URLs that with index.html
