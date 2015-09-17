@@ -36,7 +36,7 @@ class ContactRequest(models.Model):
      9: ['Cameron Peake <cpeake@wharton.upenn.edu>'],
     10: ['Cameron Peake <cpeake@wharton.upenn.edu>'],
     11: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-    12: ['Sudipta Bandyopadhyay <sudiptab@wharton.upenn.edu>'],
+    12: ['Brendan McManus <bmcmanus@wharton.upenn.edu>'],
   }
   CC_EMAILS = {
      1: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
