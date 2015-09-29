@@ -31,7 +31,7 @@ class ContactRequest(models.Model):
      4: ['Richard Bhamb <bhamb@wharton.upenn.edu>'],
      5: ['Richard Bhamb <bhamb@wharton.upenn.edu>'],
      6: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     7: ['James Chaukos <jchaukos@wharton.upenn.edu>'],
+     7: ['Sasha Dobrolioubov <adobro@wharton.upenn.edu>'],
      8: ['Cameron Peake <cpeake@wharton.upenn.edu>'],
      9: ['Cameron Peake <cpeake@wharton.upenn.edu>'],
     10: ['Cameron Peake <cpeake@wharton.upenn.edu>'],
