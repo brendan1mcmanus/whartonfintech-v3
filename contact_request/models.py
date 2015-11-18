@@ -32,7 +32,7 @@ class ContactRequest(models.Model):
      5: ['Richard Bhamb <bhamb@wharton.upenn.edu>', 'Aditya Goel <adityago@wharton.upenn.edu>'],
      6: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
      7: ['Sasha Dobrolioubov <adobro@wharton.upenn.edu>', 'Matthew Applegate <apmatt@wharton.upenn.edu>'],
-     8: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Matthew Applegate <apmatt@wharton.upenn.edu>''],
+     8: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Matthew Applegate <apmatt@wharton.upenn.edu>'],
      9: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Matthew Applegate <apmatt@wharton.upenn.edu>'],
     10: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Matthew Applegate <apmatt@wharton.upenn.edu>'],
     11: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
