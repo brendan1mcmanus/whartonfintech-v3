@@ -30,12 +30,12 @@ class ContactRequest(models.Model):
      3: ['Neha Goel <nehagoel@wharton.upenn.edu>'],
      4: ['Aditya Goel <adityago@wharton.upenn.edu>'],
      5: ['Aditya Goel <adityago@wharton.upenn.edu>'],
-     6: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
+     6: ['Uday Seth <useth@wharton.upenn.edu>'],
      7: ['Matthew Applegate <apmatt@wharton.upenn.edu>'],
      8: ['Matthew Applegate <apmatt@wharton.upenn.edu>'],
      9: ['Matthew Applegate <apmatt@wharton.upenn.edu>'],
     10: ['Matthew Applegate <apmatt@wharton.upenn.edu>'],
-    11: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
+    11: ['Uday Seth <useth@wharton.upenn.edu>'],
     12: ['Brendan McManus <bmcmanus@wharton.upenn.edu>'],
   }
   CC_EMAILS = {
