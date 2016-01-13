@@ -39,18 +39,18 @@ class ContactRequest(models.Model):
     12: ['Brendan McManus <bmcmanus@wharton.upenn.edu>'],
   }
   CC_EMAILS = {
-     1: ['Sasha Dobrolioubov <adobro@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     2: ['Sasha Dobrolioubov <adobro@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     3: ['Sasha Dobrolioubov <adobro@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     4: ['Richard Bhamb <bhamb@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     5: ['Richard Bhamb <bhamb@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
+     1: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+     2: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+     3: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+     4: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+     5: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
      6: [],
-     7: ['Sasha Dobrolioubov <adobro@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     8: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-     9: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
-    10: ['Cameron Peake <cpeake@wharton.upenn.edu>', 'Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
+     7: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+     8: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+     9: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
+    10: ['Uday Seth <useth@wharton.upenn.edu>', 'Irfanali Manji <imanji@wharton.upenn.edu>'],
     11: [],
-    12: ['Daniel McAuley <dmcauley@wharton.upenn.edu>', 'Steve Weiner <weins@wharton.upenn.edu>'],
+    12: ['Uday Seth <useth@wharton.upenn.edu>'],
   }
 
   name = models.CharField(max_length=128)
